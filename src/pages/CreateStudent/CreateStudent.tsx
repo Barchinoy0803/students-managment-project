@@ -12,6 +12,14 @@ const CreateStudent = () => {
     const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
         const newStudent = { ...values, id: new Date().getTime() }
         dispatch(createStudent(newStudent))
+        form.setFieldsValue({
+            firstname: "",
+            lastname :"",
+            age: "",
+            phone: "",
+            password: "",
+            username: ""
+        })
     };
 
     const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {

@@ -58,9 +58,9 @@ const FormData: React.FC<Props> = ({ onFinishFailed, onFinish, data, isEditMode 
                 <Form.Item<FieldType>
                     label="Age"
                     name="age"
-                    rules={[{ required: true, message: 'Please input your age and your age must have number!' , type:'number'}]}
+                    rules={[{ required: true, message: 'Please input your age and your age must have number!'}]}
                 >
-                    <Input />
+                    <Input type='number' />
                 </Form.Item>
 
                 <Form.Item<FieldType>
