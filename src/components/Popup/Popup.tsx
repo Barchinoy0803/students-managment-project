@@ -49,6 +49,7 @@ const Popup = () => {
     return (
         <>
             <Modal
+                className='min-w-[700px] w-full'
                 title={type === "edit" ? <p>Update student</p> : <p>Delete student</p>}
                 open={isOpen}
                 onOk={handleSubmit}
